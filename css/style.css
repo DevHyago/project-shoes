@@ -53,6 +53,48 @@ nav a:hover{
    background-repeat: no-repeat;
 }
 
+section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Section finding your style */
+.your-style{
+   padding: 20px 0;
+}
+
+.your-style h1{
+   font-style: normal;
+   font-weight: 800;
+   font-size: 30px;
+   line-height: 82px;
+}
+
+.your-style img{
+   width: 100%;
+}
+
+.your-style-images{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.image-1{
+   width: 200px;
+}
+
+.image-2{
+   width: 250px;
+}
+
+
+
+/*Tablet*/
 @media (min-width: 768px){
    .icon-nav{
       display: none;
@@ -67,11 +109,39 @@ nav a:hover{
       background-position: right;
    }
 
+   .your-style-images{
+      margin-top: 20px;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+
+   .image-1{
+      width: 230px;
+   }
+
+   .image-2{
+      width: 320px;
+   }
+
 }
 
+/* PC's */
 @media (min-width: 1024px){
    .banner{
       background-position: center;
       background-size: cover;
+   }
+
+   .your-style h1{
+      font-size: 40px;
+      margin: 20px 0;
+   }
+
+   .image-1{
+      width: 400px;
+   }
+
+   .image-2{
+      width: 600px;
    }
 }
