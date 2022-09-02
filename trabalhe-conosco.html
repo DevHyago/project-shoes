@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Shoes Store</title>
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/trabalhe-conosco.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -21,9 +22,8 @@
 
    <section>
 
-      <h1>Faça parte do nosso time</h1>
-
-      <div>
+      <div class="form">
+         <h1>Faça parte do nosso time</h1>
 
          <form>
             <label for="nome">Nome</label>
@@ -44,10 +44,10 @@
                <option value="medicinaDoTrabalho">Medicina do Trabalho</option>
             </select>
 
-            <label for="disponibilidade">Disponibilidade</label>
-            <input type="checkbox">Integral (8h)
-            <input type="checkbox">Meio período (4h)
-            <input type="checkbox">Freelance
+            <label for="disponibilidade" class="disponibilidade">Disponibilidade</label>
+            <input type="checkbox" value="integral" id="integral"><label for="integral">Integral (8h)</label>
+            <input type="checkbox" value="meio-periodo" id="meio-periodo"><label for="meio-periodo">Meio período (4h)</label>
+            <input type="checkbox" value="freelance" id="freelance"><label for="freelance">Freelance</label>
 
             <label for="contato">Qual a melhor forma de contato com você? </label>
             <input type="radio" value="telefone" id="telefone" name="contato">
@@ -58,22 +58,20 @@
             <label for="whatsapp">Whatsapp</label>
 
             <label for="mensagem">Mensagem</label>
-            <textarea name="" id="mensagem" cols="30" rows="4">
+            <textarea name="" id="mensagem" rows="4">
             </textarea>
 
-            <label for="curriculo">Curriculo</label>
+            <label for="curriculo" class="curriculo">Curriculo</label>
             <input type="file" id="curriculo"/>
             
          </form>
+      </div>
 
+      <div class="description">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
    </section>
-
-   <!--
-      Pseudoseletores CSS
-      Ao Clicar no input -> 
-   -->
 
 </body>
 </html>

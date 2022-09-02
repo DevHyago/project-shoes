@@ -1,0 +1,84 @@
+section{
+   display: flex;
+   flex-direction: column;
+   padding: 5vh 5vw;
+}
+
+section h1{
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 53px;
+   color: #575757;
+}
+
+section input[type='text'], section input[type='email'], section input[type='phone'], section select{
+   display: block;
+   margin-top: 5px;
+   width: 100%;
+   border: 1px solid #9B9B9B;
+   height: 26px;
+}
+
+section label{
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #9B9B9B;
+}
+
+section .disponibilidade{
+   display: block;
+   margin-top: 15px;
+   margin-bottom: 5px;
+}
+
+section label[for='integral'], section label[for='meio-periodo'], section label[for='freelance'],
+section label[for='telefone'], section label[for='email'], section label[for='whatsapp']
+{
+   font-size: 14px;
+   line-height: 16px;
+   color: #777777;
+}
+
+section label[for='contato'], section label[for='mensagem']{
+   display: block;
+   margin-top: 15px;
+   margin-bottom: 5px;
+}
+
+section input[type='file']{
+   margin: 15px 0;
+}
+
+section textarea{
+   width: 100%;
+}
+
+section p{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 22px;
+   color: #575757;
+}
+
+@media (min-width: 768px){
+   section{
+      padding: 0 10vw;
+   }
+}
+
+@media (min-width: 1024px){
+
+   section{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   section div{
+      width: 45%;
+      margin: 30px 0;
+   }
+
+
+}
